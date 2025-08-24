@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mark 10</title>
+    <link rel="stylesheet" href="dirty.css" />
+  </head>
+  <body>
+    <div class="main">
+      <h1>Cash-Register</h1>
+      <p>
+        This app will take input Bill amount, the amount of cash given by the
+        user and calculates the change that should be returned and splits it
+        among the people.
+      </p>
+      <div class="container">
+        <label for="input">
+          Bill amount*: <br />
+          <input
+            type="text"
+            class="input1"
+            required
+            placeholder="Enter Bill amount"
+          />
+        </label>
+        <br />
+        <button id="next_btn" onclick="nextbtn_onclick()">Next</button>
+        <div class="inner_container">
+          <div>
+            <label for="input" id="input2">
+              Cash amount paid*: <br />
+              <input
+                type="text"
+                class="input2"
+                required
+                placeholder="Enter Cash amount paid"
+              />
+            </label>
+            <label for="input" id="input3">
+              Number of People: <br />
+              <input
+                type="text"
+                class="input3"
+                placeholder="Enter Number of People"
+              />
+            </label>
+            <label for="input" id="input4">
+              Notes (for Change): <br />
+              <input type="text" class="input4" placeholder=" Enter Notes " />
+            </label>
+          </div>
+          <button id="check_btn" class="btn" onclick="btn_onclick()">
+            Calculate
+          </button>
+        </div>
+      </div>
+      <div class="out">
+        <table class="output" style="border: 2px solid" id="table"></table>
+      </div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
